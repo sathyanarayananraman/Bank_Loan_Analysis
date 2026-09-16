@@ -263,10 +263,10 @@ This provides a more detailed view of the portfolio's performance.
 
 1. Overall Loan Portfolio
    KPI	                           Value
-   Total Loan Applications    	   38,576
-   otal Funded Amount	            $435.8M
-   Total Amount Received	         $473.1M
-   Average Interest Rate	         12.05%
+   Total Loan Applications    	      38,576
+   otal Funded Amount	              $435.8M
+   Total Amount Received	          $473.1M
+   Average Interest Rate	           12.05%
    Average DTI Ratio	               13.33%
      ---
 
