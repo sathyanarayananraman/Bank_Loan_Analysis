@@ -1,6 +1,6 @@
 # 🏦 Bank Loan Analytics
 
-### Python | SQL | MySQL | Power BI | DAX
+### Python | SQL | MySQL | Power BI |
 
 An end-to-end **Bank Loan Analytics** project focused on analyzing loan applications, loan quality, funding, repayment performance, customer characteristics, and portfolio trends.
 
