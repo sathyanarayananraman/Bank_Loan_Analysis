@@ -264,8 +264,8 @@ This provides a more detailed view of the portfolio's performance.
 1. Overall Loan Portfolio
    KPI	                               Value
    Total Loan Applications    	       38,576
-   otal Funded Amount	              $435.8M
-   Total Amount Received	          $473.1M
+   Total Funded Amount	               $435.8M
+   Total Amount Received	           $473.1M
    Average Interest Rate	           12.05%
    Average DTI Ratio	               13.33%
      ---
@@ -273,7 +273,7 @@ This provides a more detailed view of the portfolio's performance.
 2. Good vs Bad Loans
    Loan Category	   Applications	   Percentage
    Good Loans	        33,243	         86.18%
-   Bad Loans	        5,333       	13.82%
+   Bad Loans	        5,333       	  13.82%
    Total	            38,576      	 100%
 
 Good Loans
@@ -285,7 +285,7 @@ Good Loans
    Amount Received	     $435.8M
 
 Bad Loans
-   Metric	            Value
+   Metric	             Value
    Applications	         5,333
    Percentage	         13.82%
    Funded Amount	     $65.5M
@@ -351,7 +351,7 @@ Charged Off
 Current
 Funded Amount vs Amount Received
 
-Loan Status	   Funded Amount	   Amount Received
+Loan Status	   Funded Amount	 Amount Received
 Fully Paid	   ~$351.4M	         ~$411.6M
 Charged Off	   ~$65.5M	         ~$37.3M
 Current	      ~$18.9M	         ~$24.2M
@@ -366,6 +366,7 @@ Fully Paid	      11.64%
 This provides a descriptive comparison of average interest rates across loan statuses.
 ---
 9. Average DTI by Loan Status
+
 Loan Status	   Average DTI
 Current	       114.72%
 Charged Off	   14.00%
