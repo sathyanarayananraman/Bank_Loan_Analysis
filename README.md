@@ -262,8 +262,8 @@ This provides a more detailed view of the portfolio's performance.
 🔍 Key Insights
 
 1. Overall Loan Portfolio
-   KPI	                           Value
-   Total Loan Applications    	      38,576
+   KPI	                               Value
+   Total Loan Applications    	       38,576
    otal Funded Amount	              $435.8M
    Total Amount Received	          $473.1M
    Average Interest Rate	           12.05%
@@ -272,24 +272,24 @@ This provides a more detailed view of the portfolio's performance.
 
 2. Good vs Bad Loans
    Loan Category	   Applications	   Percentage
-   Good Loans	      33,243	         86.18%
-   Bad Loans	      5,333       	   13.82%
-   Total	            38,576      	   100%
+   Good Loans	        33,243	         86.18%
+   Bad Loans	        5,333       	13.82%
+   Total	            38,576      	 100%
 
 Good Loans
 
-   Metric	            Value
-   Applications	      33,243
+   Metric	             Value
+   Applications	         33,243
    Percentage	         86.18%
-   Funded Amount	      $370.2M
-   Amount Received	   $435.8M
+   Funded Amount	     $370.2M
+   Amount Received	     $435.8M
 
 Bad Loans
    Metric	            Value
-   Applications	      5,333
+   Applications	         5,333
    Percentage	         13.82%
-   Funded Amount	      $65.5M
-   Amount Received	   $37.3M
+   Funded Amount	     $65.5M
+   Amount Received	     $37.3M
 
 The Good vs Bad loan analysis provides a view of loan quality and financial performance within the portfolio.
 
@@ -301,7 +301,7 @@ Loan application volume increased over the year represented in the dataset.
 
 Period	   Applications
 January	   ~2.3K
-December	   ~4.3K
+December~4.3K
 
 This provides a view of changes in loan application activity throughout the year.
 ---
@@ -316,8 +316,8 @@ Loan Term	   Applications	Percentage
 5. Home Ownership
 
 Rent	      18,439
-Mortgage	   17,198
-Own	      2,838
+Mortgage	  17,198
+Own	          2,838
 Other	      98
 None	      3
 
@@ -359,7 +359,7 @@ Current	      ~$18.9M	         ~$24.2M
 ---
 8. Average Interest Rate by Loan Status
 Loan Status	   Average Interest Rate
-Current	         15.10%
+Current	          15.10%
 Charged Off	      13.88%
 Fully Paid	      11.64%
 
@@ -367,7 +367,7 @@ This provides a descriptive comparison of average interest rates across loan sta
 ---
 9. Average DTI by Loan Status
 Loan Status	   Average DTI
-Current	      14.72%
+Current	       114.72%
 Charged Off	   14.00%
 Fully Paid	   13.17%
 
