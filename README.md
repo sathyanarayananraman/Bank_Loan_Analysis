@@ -110,82 +110,91 @@ The dataset contains information related to loan applications, loan status, fund
                        ▼
                 Business Insights
 ```
- 1. Python Data Cleaning & EDA
-
+ ---
+ 1.Python Data Cleaning & EDA
 Python was used as the initial data preparation and analysis layer.
 
 Data Cleaning: 
 The cleaning process included:
 
--Checking for missing values,
--Checking for duplicate records,
--Standardizing column names,
--Preparing the dataset for further analysis,
+-Checking for missing values
+-Checking for duplicate records
+-Standardizing column names
+-Preparing the dataset for further analysis
 -Python and Pandas were used for data manipulation and analysis.
 
-2. MySQL & SQL
+---
+2.MySQL & SQL
 
 - After cleaning the dataset in Python
 - the data was loaded into MySQL using SQLAlchemy.
 - MySQL was used as the database layer before connecting the data to Power BI.
 
-Workflow
-Python ➡ Cleaned Dataset ➡ SQLAlchemy ➡ MySQL ➡ Power BI
+-Workflow
+   Python ➡ Cleaned Dataset ➡ SQLAlchemy ➡ MySQL ➡ Power BI
+-This created a structured workflow between data preparation, database storage, and business intelligence reporting.
 
-This created a structured workflow between data preparation, database storage, and business intelligence reporting.
+---
+3.Power BI
 
-3. Power BI
+-The MySQL data was connected to Power BI for visualization and further analysis.
 
-The MySQL data was connected to Power BI for visualization and further analysis.
+-The Power BI solution contains two main dashboard pages:
 
-The Power BI solution contains two main dashboard pages:
+-Page 1 — Overview
 
-Page 1 — Overview
+   -The Overview page provides a high-level view of the loan portfolio.
 
-The Overview page provides a high-level view of the loan portfolio.
+   It includes:
 
-It includes:
+      - Total Loan Applications
+      - Total Funded Amount
+      - Total Amount Received
+      - Average Interest Rate
+      - Average DTI Ratio
+      - Monthly Loan Applications
+      - Loan Applications by State
+      - Loan Applications by Term
+      - Loan Applications by Home Ownership
+      - Loan Applications by Loan Purpose
 
-- Total Loan Applications
-- Total Funded Amount
-- Total Amount Received
-- Average Interest Rate
-- Average DTI Ratio
-- Monthly Loan Applications
-- Loan Applications by State
-- Loan Applications by Term
-- Loan Applications by Home Ownership
-- Loan Applications by Loan Purpose
+-Page 2 — Summary
+   -The Summary page focuses on loan quality and portfolio performance.
 
-Page 2 — Summary
-The Summary page focuses on loan quality and portfolio performance.
+   It includes:
 
-It includes:
+      - Good vs Bad Loan Applications
+      - Good vs Bad Loan Funded Amount
+      - Good vs Bad Loan Amount Received
+      - Loan Status
+      - Average Interest Rate by Loan Status
+      - Average DTI by Loan Status
+---
 
-- Good vs Bad Loan Applications
-- Good vs Bad Loan Funded Amount
-- Good vs Bad Loan Amount Received
-- Loan Status
-- Average Interest Rate by Loan Status
-- Average DTI by Loan Status
-
-4. Power BI Data Modeling & DAX
+4.Power BI Data Modeling & DAX
 
 Power BI was used for data modeling and business calculations.
 
 The project includes:
 
 -Calculated columns
+
 -Conditional loan classification
+
 -DAX measures
+
 -KPI calculations
+
 -Good Loan analysis
+
 -Bad Loan analysis
+
 -Good vs Bad Loan Classification
 
 Loans were classified into:
 
 -Good Loan
+
 -Bad Loan
 
 This classification was then used to analyze loan applications, funded amounts, and amounts received.
@@ -218,9 +227,13 @@ The Overview dashboard provides a consolidated view of the bank's lending activi
 It allows users to analyze loan applications across different dimensions such as:
 
 -Time
+
 -State
+
 -Loan term
+
 -Home ownership
+
 -Loan purpose
 
 The dashboard also provides key portfolio-level KPIs.
@@ -230,7 +243,6 @@ The dashboard also provides key portfolio-level KPIs.
 Summary Dashboard
 
 The Summary dashboard focuses on loan quality and financial performance.
-
 It compares:
 
 1. Good Loans vs Bad Loans
@@ -246,15 +258,15 @@ This provides a more detailed view of the portfolio's performance.
 🔍 Key Insights
 1. Overall Loan Portfolio
 
--The dataset contains: 38,576 loan applications
+      -The dataset contains: 38,576 loan applications
 
--The total funded amount is approximately: $435.8M
+      -The total funded amount is approximately: $435.8M
 
--The total amount received is approximately: $473.1M
+      -The total amount received is approximately: $473.1M
 
--The portfolio has an average interest rate of: 12.05%
+      -The portfolio has an average interest rate of: 12.05%
 
--The average DTI ratio is: 13.33%
+      -The average DTI ratio is: 13.33%
 
 --- 
 
@@ -263,6 +275,7 @@ This provides a more detailed view of the portfolio's performance.
 The portfolio contains:
 
   |Loan Category  |	Applications   |	Percentage |
+  |---|---|
   |Good Loans	   |  33,243	      |86.18%       |
   |Bad Loans	   |  5,333	         |13.82%       |
   |Total	         |  38,576	      |100%         |
@@ -285,11 +298,11 @@ The Good vs Bad loan analysis provides an important view of the portfolio's loan
 
 📅 3. Monthly Loan Application Trend
 
-Loan application volume increased over the year represented in the dataset.
+- Loan application volume increased over the year represented in the dataset.
 
-Approximate monthly applications ranged from: January: ~2.3K  to December: ~4.3K
+- Approximate monthly applications ranged from: January: ~2.3K  to December: ~4.3K
 
-This provides a view of how loan application activity changed throughout the year.
+- This provides a view of how loan application activity changed throughout the year.
 
 ---
 
@@ -298,6 +311,7 @@ This provides a view of how loan application activity changed throughout the yea
 The majority of loan applications were associated with a 36-month term.
 
 | Loan Term |	Applications |	Percentage |
+|---|---|
 |36 Months  |	~28K	       |    73.2%   |
 |60 Months	|  ~10K	       |    26.8%   |
 
@@ -309,12 +323,12 @@ The 36-month loan term represents the larger share of applications in the datase
 
 Loan applications were concentrated among customers who either rent or have a mortgage.
 
--Home Ownership	Applications
--Rent	18,439 
--Mortgage	17,198 
--Own	2,838 
--Other	98 
--None	3
+   -Home Ownership Applications
+   -Rent	18,439 
+   -Mortgage	17,198 
+   -Own	2,838 
+   -Other	98 
+   -None	3
 
 Rent and mortgage categories account for the majority of loan applications.
 
@@ -352,14 +366,14 @@ The dashboard analyzes loan performance across different loan statuses, includin
 The analysis compares funded amounts and amounts received across these loan statuses.
 
 -Fully Paid
-   -Funded Amount: approximately $351.4M
-   -Amount Received: approximately $411.6M
+   -- Funded Amount: approximately $351.4M
+   -- Amount Received: approximately $411.6M
 -Charged Off
-   -Funded Amount: approximately $65.5M
-   -Amount Received: approximately $37.3M
+   -- Funded Amount: approximately $65.5M
+   -- Amount Received: approximately $37.3M
 -Current
-   -Funded Amount: approximately $18.9M
-   -Amount Received: approximately $24.2M
+   -- Funded Amount: approximately $18.9M
+   -- Amount Received: approximately $24.2M
 
  ---
 
@@ -368,6 +382,7 @@ The analysis compares funded amounts and amounts received across these loan stat
 The dashboard compares average interest rates across loan statuses.
 
 |Loan Status | 	Average Interest Rate |
+|---|---|
 |Current	    |    15.10%                |
 |Charged Off | 	13.88%                |
 |Fully Paid	 |    11.64%                |
@@ -381,6 +396,7 @@ This provides a descriptive comparison of interest rates across different loan s
 The dashboard also compares average DTI ratios across loan statuses.
 
 |Loan Status	|  Average DTI |
+|---|---|
 |Current	      |  14.72%      |
 |Charged Off	|  14.00%      |
 |Fully Paid	   |  13.17%      |
@@ -393,20 +409,21 @@ These values provide a descriptive view of DTI across different loan-status grou
 
 The analysis provides several useful views of the lending portfolio:
 
--The dataset contains 38,576 loan applications.
--Approximately 86.18% of applications are classified as Good Loans.
--Approximately 13.82% are classified as Bad Loans.
--The portfolio contains approximately $435.8M in funded loans.
--The total amount received is approximately $473.1M.
--Loan application activity increased during the year represented by the dataset.
--36-month loans account for the majority of applications.
--Rent and Mortgage are the largest home ownership categories.
--Debt Consolidation is the largest loan-purpose category.
--Loan status can be analyzed alongside funded amount, amount received, interest rate, and DTI.
+   -The dataset contains 38,576 loan applications.
+   -Approximately 86.18% of applications are classified as Good Loans.
+   -Approximately 13.82% are classified as Bad Loans.
+   -The portfolio contains approximately $435.8M in funded loans.
+   -The total amount received is approximately $473.1M.
+   -Loan application activity increased during the year represented by the dataset.
+   -36-month loans account for the majority of applications.
+   -Rent and Mortgage are the largest home ownership categories.
+   -Debt Consolidation is the largest loan-purpose category.
+   -Loan status can be analyzed alongside funded amount, amount received, interest rate, and DTI.
 
 ---
 
 📁 Repository Structure
+
 Bank_Loan_Analysis/
 │
 ├── output/
@@ -423,25 +440,25 @@ Bank_Loan_Analysis/
 ---
 
 🎯 Skills Demonstrated
--Data Analytics
--Data Cleaning
--Data Preparation
--Business Analysis
--KPI Development
--Financial Data Analysis
--Python
-   -Pandas
-   -Data Manipulation
--SQL & Database
-   -MySQL
-   -SQLAlchemy
-   -Database Integration
-   -Business Intelligence
--Power BI
-   -DAX
-   -Data Modeling
-   -Dashboard Development
-   -Data Visualization
+   -Data Analytics
+   -Data Cleaning
+   -Data Preparation
+   -Business Analysis
+   -KPI Development
+   -Financial Data Analysis
+   -Python
+      -Pandas
+      -Data Manipulation
+   -SQL & Database
+      -MySQL
+      -SQLAlchemy
+      -Database Integration
+      -Business Intelligence
+   -Power BI
+      -DAX
+      -Data Modeling
+      -Dashboard Development
+      -Data Visualization
 
 ---
 
@@ -449,12 +466,12 @@ Bank_Loan_Analysis/
 
 The project can be extended with additional analytics and data engineering capabilities, including:
 
--Automated data ingestion
--Automated ETL pipelines
--Additional loan risk metrics
--Customer segmentation
--Loan default prediction
--Advanced SQL analysis
--Automated Power BI data refresh
--Integration with additional financial datasets
--Machine learning-based loan risk analysis
+   -Automated data ingestion
+   -Automated ETL pipelines
+   -Additional loan risk metrics
+   -Customer segmentation
+   -Loan default prediction
+   -Advanced SQL analysis
+   -Automated Power BI data refresh
+   -Integration with additional financial datasets
+   -Machine learning-based loan risk analysis
